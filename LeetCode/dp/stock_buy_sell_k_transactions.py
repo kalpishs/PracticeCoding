@@ -106,10 +106,17 @@ profit_table=
 import sys
 from typing import *
 class Solution:
-	def maxProfitWithKTnx(self, k: int, prices: List[int]) -> int:
+	def maxProfit(self, k: int, prices: List[int]) -> int:
 		len_prices=len(prices)
-		if len_prices==0:
+		if len_prices==0 or k==0:
 			return 0
+		if 2 * k > len_prices:
+			res = 0
+			for i in range(1, len_prices):
+				price = prices[i] - prices[i - 1]
+				if price > 0:
+					res += price
+			return res
 		profit_dp_table=[[0 for rows in range(len_prices)] for cols in range (k+1)] #majorly for filling 1st row and 1st'
 																					# col as 0 since we have max profit as 0 if only 1 tnx is allowed
 																					# also 0 profit if we have only 1 price avilable
@@ -121,3 +128,6 @@ class Solution:
 			#Time complexity O(tnx*day)
 		return profit_dp_table[-1][-1]
 		#Time complexity O(tnx*day) | O(tnx*day) space
+if __name__=="__main__":
+	solve=Solution()
+	print(solve.maxProfit(2,[5, 11, 3, 50, 60, 90]))
