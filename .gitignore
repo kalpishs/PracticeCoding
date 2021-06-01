@@ -1,4 +1,13 @@
 .idea/*
 .DS_Store
-.iml
-Practice_Scala_Java/Practice_Scala_Java.iml
+*.DS_Store
+*.iml
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
