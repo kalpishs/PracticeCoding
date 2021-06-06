@@ -1,3 +1,12 @@
+''''
+
+Longest palindrome substring
+
+https://leetcode.com/problems/longest-palindromic-substring/
+Date : 06-06-21
+
+'''
+
 from typing import *
 class Solution:
     def longestPalindrome(self, s: str) -> str:
