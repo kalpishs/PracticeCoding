@@ -1,6 +1,0 @@
-[user]
-name = kalpishs
-email = kalpish.singhal@gmail.com
-
-[core]
-sshCommand = ssh -i ~/.ssh/per_github
