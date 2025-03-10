@@ -51,6 +51,8 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+FackerApp/output_data
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
