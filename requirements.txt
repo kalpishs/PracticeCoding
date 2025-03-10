@@ -1,1 +1,3 @@
 CoWIN-API-by-Kunal-Kumar-Sahoo
+pandas~=2.2.3
+pytz~=2024.2
