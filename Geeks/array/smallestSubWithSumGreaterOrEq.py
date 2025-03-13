@@ -2,7 +2,8 @@
 from typing import *
 
 class Solution:
-    def smallestSubWithSum(self, x:int, arr:list[int]):
+    @staticmethod
+    def smallestSubWithSum(x:int, arr:list[int]):
         high, low = 0, 0
         sum = 0
         result = float('inf')
@@ -20,18 +21,7 @@ class Solution:
         # Your code goes here
 
 
-# {
-# Driver Code Starts
-def main():
-    T = int(input())
 
-    while (T > 0):
-        x = int(input())
-        a = [int(x) for x in input().strip().split()]
-        print(Solution().smallestSubWithSum(x, a))
-
-        T -= 1
-        print("~")
 
 
 if __name__ =="__main__":
