@@ -1,5 +1,6 @@
-#https://www.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x5808/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
-
+"""
+https://www.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x5808/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
+"""
 
 class Solution:
     def allPairs(self, target, arr1, arr2):
