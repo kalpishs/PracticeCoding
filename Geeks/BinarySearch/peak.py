@@ -1,6 +1,9 @@
 # Python program to find a peak element in the given array
 # Using Binary Search
-
+"""
+https://www.geeksforgeeks.org/problems/peak-element/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign
+Article:- https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/
+"""
 class Solution:
     def peakElement(self, arr):
         n = len(arr)
@@ -25,9 +28,3 @@ class Solution:
 if __name__ == "__main__":
     arr = [1, 2, 5, 3, 4, 3, 4, 3]
     print(Solution().peakElement(arr))
-
-
- """
- https://www.geeksforgeeks.org/problems/peak-element/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign
- Article:- https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/
- """
