@@ -1,4 +1,6 @@
 #https://leetcode.com/problems/peak-index-in-a-mountain-array/
+from typing import *
+
 """
 You are given an integer mountain array arr of length n where the values increase to a peak element and then decrease.
 
@@ -43,3 +45,11 @@ class Solution:
             else:
                 high = mid
         return low
+
+
+if __name__ =="__main__":
+    bS = Solution()
+
+    arr = [1, 2, 5, 10, 8, 7, 9]
+    result=bS.peakIndexInMountainArray(arr)
+    print("Element is present at index % d" % result)
